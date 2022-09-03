@@ -2,6 +2,7 @@ package model;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -76,4 +77,26 @@ public class Book {
     public void setAuthors(Set<Author> authors) {
         this.authors = authors;
     }
+
+	@Override
+	public int hashCode() {
+	    return id != null ? id.hashCode() : 0;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+	    if (this == o) return true;
+	    if (o == null || getClass() != o.getClass()) return false;
+
+	    Book book = (Book) o;
+
+	    return id != null ? id.equals(book.id) : book.id == null;
+	}
+
+	@Override
+	public String toString()
+	{
+		return "Book [id=" + id + ", title=" + title + ", isbn=" + isbn + ", publisher=" + publisher + ", authors="
+				+ authors + "]";
+	}
 }
