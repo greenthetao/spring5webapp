@@ -1,4 +1,4 @@
-package guru.springframework.spring5webapp.model;
+package guru.springframework.spring5webapp.controller;
 
 import guru.springframework.spring5webapp.repositories.BookRepository;
 import org.springframework.stereotype.Controller;
