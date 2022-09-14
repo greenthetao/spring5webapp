@@ -1,10 +1,6 @@
 package guru.springframework.spring5webapp.bootstrap;
 
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
-//import org.springframework.boot.SpringApplication;
-//import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 import guru.springframework.spring5webapp.repositories.*;
 import guru.springframework.spring5webapp.model.*;
